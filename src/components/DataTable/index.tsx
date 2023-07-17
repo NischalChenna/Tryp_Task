@@ -89,10 +89,10 @@ const DataTable: React.FC<DataTableProps> = ({
   };
 
   return (
-    <Box overflowX="auto">
+    <Box>
       {/* Add overflowX property to enable horizontal scrolling */}
       {caption ? <h3 style={{ marginBottom: "10px" }}>{caption}</h3> : null}
-      <Box borderWidth="1px" borderRadius="md" overflow="hidden">
+      <Box borderWidth="1px" borderRadius="md" overflowX="auto">
         {paginatedData.length > 0 ? (
           <Table variant="simple" minWidth="100%">
             {" "}
